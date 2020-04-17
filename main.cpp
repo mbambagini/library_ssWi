@@ -16,14 +16,12 @@ Thread writingThread;
 void readingFunction();
 void writingFunction();
 
-//Serial pc(USBTX, USBRX, "pc", 9600);
-
 #define UPDATE_RATE_MS    1000
 
 int main()
 {
 
-    //pc.printf("\n\r************* CONFIG *************\n\r");
+    printf("\n\r************* CONFIG *************\n\r");
 
 code_state(0);
 
