@@ -8,4 +8,6 @@ The protocol provides the ssWiPort abstraction which is like memory areas shared
 
 Objects instantiated from ssWiSocket are the interface for allowing nodes to access the protocol ports.
 
+![protocol idea](images/ssWi.png)
+
 See https://os.mbed.com/users/mariob/code/ssWi/
