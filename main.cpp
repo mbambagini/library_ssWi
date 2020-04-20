@@ -20,9 +20,6 @@ void writingFunction();
 
 int main()
 {
-
-    printf("\n\r************* CONFIG *************\n\r");
-
     //radio module
     XBeeModule xbee(p9, p10, 102, 14);
     xbee.setDstAddress(XBeeBroadcastAddress());
