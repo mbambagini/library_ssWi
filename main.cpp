@@ -23,29 +23,14 @@ int main()
 
     printf("\n\r************* CONFIG *************\n\r");
 
-code_state(0);
-
     //radio module
     XBeeModule xbee(p9, p10, 102, 14);
-    //XBeeAddress addr = xbee.getLocalAddress();
-
-code_state(1);
-
     xbee.setDstAddress(XBeeBroadcastAddress());
-
-code_state(2);
-
-   //XBeeAddress addr2(0, 0);
-   //xbee.getDstAddress(addr2);
-   //xbee.getChannel();
-   //xbee.getPanID();
 
     //wireless network
     xbee.init(5, 10);
 
     srand(time(0));
-
-code_state(4);
 
     thread_sleep_for(UPDATE_RATE_MS);
 
@@ -54,8 +39,6 @@ code_state(4);
     writingThread.start(writingFunction);
 
     while (true) {
-        //code_state(writtenValue);
-        //thread_sleep_for(UPDATE_RATE_MS);
         code_state(readValue);
         thread_sleep_for(UPDATE_RATE_MS);
     }
