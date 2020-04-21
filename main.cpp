@@ -1,3 +1,18 @@
+/* 
+ * Test ssWi library
+ * 
+ * Xbee adapter pins:
+ * Vin  -> 5v
+ * Gnd  -> gnd
+ * 3.3V -> nc
+ * SL   -> nc
+ * RTS  -> nc
+ * DTR  -> nc
+ * RX   -> p9
+ * TX   -> p10
+ * Gnd  -> nc
+ */
+
 #include "mbed.h"
 
 #include "xbee.hpp"
